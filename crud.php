@@ -36,7 +36,7 @@ if(isset($_POST["listar"]))
         $m = $linhas["matricula"];
         $n = $linhas["nome"];
         $i = $linhas["idade"];
-
+//só mostra se o aluno for maior de idade
         if($i >= 18)
         {
             echo(" Nome: $n  idade: $i matricula: $m <br> <br>");
