@@ -36,7 +36,15 @@ if(isset($_POST["listar"]))
         $m = $linhas["matricula"];
         $n = $linhas["nome"];
         $i = $linhas["idade"];
-        echo(" Nome: $n  idade: $i matricula: $m <br> <br>");
+
+        if($i >= 18)
+        {
+            echo(" Nome: $n  idade: $i matricula: $m <br> <br>");
+        }
+        else
+        {
+            header("Location: cadastro.html"); 
+        }
     }
 } 
 ?>
